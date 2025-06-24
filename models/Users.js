@@ -10,13 +10,13 @@ const userSchema = new mongoose.Schema({
 
     email: {
         type: String,
-        reuired: true,
+        required: true,
         unique: true,
         match: /.+\@.+\..+/,
         index: true
     },
     joinedAt: {
-        type: Data,
+        type: Date,
         default: Date.now
     }
 });

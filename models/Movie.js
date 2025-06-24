@@ -8,10 +8,10 @@ const movieSchema = new mongoose.Schema({
     },
 genre: String,
 releaseYear: Number,
-postedBy:{
-    type: mongoose.Schema.Types.ObjectId,
-    ref: 'User'
-}
+// postedBy:{
+//     type: mongoose.Schema.Types.ObjectId,
+//     ref: 'User'
+// }
 
 });
       
