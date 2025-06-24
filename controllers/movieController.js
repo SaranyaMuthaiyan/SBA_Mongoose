@@ -14,7 +14,7 @@ export const getMovies = async (req, res) => {
 export const createMovie = async (req, res) => {
     try{
         const movie = await Movie.create(req.body);
-        res.status(201).json({movie});
+        res.status(201).json(movie);
     }catch(err){
         res.status(400).json({error: err.message});
     }
