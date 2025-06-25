@@ -1,4 +1,5 @@
-#USers:
+Created a RESTFul api using  Node.js, Express and MongoDb  that allows the user to  manage and share the movie , post reviews. I just included the full CRUD operations for the User -Schema, applying some validations and  included proper error handling using express middleware. This  project can be tested using  tools like thunderClient  or postman. I just tested using Thunder Client only.
+#Users:
 
 -`GET/ api/users` - List all users
 -`POST/api/users` - Create user
@@ -7,10 +8,8 @@
 
 #Movies:
 -`GET/ api/movies` - List all movies
--`POST/api/movies` - Add a movie
--`PATCH /api/movies/:id` - Update a movie
--`Delete /api/movies/:id` - Delete a movie
-
 #### review
+
+-`GET/api/reviews` - List all reviews
 
 
