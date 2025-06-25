@@ -1,3 +1,4 @@
+import Movie from '../models/Movie.js';
 import User from '../models/Users.js';
 
 export const getUsers = async (req, res) => {
@@ -46,4 +47,23 @@ export const deleteUser = async (req, res) => {
     }
 
 };
+export const getMovie = async (req, res) => {
+    try {
+        const movies = await Movie.find();
+        res.status(200).json(movies);
+    } catch (err) {
+        res.status(500).json({ error: err.message });
+
+    }
+};
+export const getReview = async (req, res) => {
+    try {
+        const reviews = await Review.find();
+        res.status(200).json(reviews);
+    } catch (err) {
+        res.status(500).json({ error: err.message });
+
+    }
+};
+
 
