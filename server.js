@@ -12,9 +12,9 @@ const PORT = process.env.PORT
 // app.listen(port, () => console.log('Server running in port  ${port}')
 // );
 
-await mongoose.connect(process.env.MONGODB_URI)
+await mongoose.connect(process.env.MONGODB_URL)
 
     console.log('MongoDb connected');
     app.listen(PORT, () =>
-    console.log(`Server running  ${PORT}`)
+    console.log(`Server running  in  ${PORT}`)
 );
