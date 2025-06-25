@@ -2,8 +2,9 @@ Created a RESTFul api using  Node.js, Express and MongoDb  that allows the user 
 #Users:
 
 -`GET/ api/users` - List all users
--`POST/api/users` - Create user
--`Delete /api/users/:id` - Delete user
+-`POST/api/users` - Create  a new user
+-`PATCH/api/users/:id` - Updates the user using id.
+-`Delete /api/users/:id` - Delete user using the id.
 
 
 #Movies:
