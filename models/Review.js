@@ -11,7 +11,7 @@ const revSchema = new mongoose.SchemaType({
     },
     rating:{
         type: Number,
-        reuired:true,
+        required:true,
         min: 1,
         max: 10
     },
