@@ -1,27 +1,28 @@
 import mongoose from 'mongoose'
 
-const revSchema = new mongoose.SchemaType({
+const revSchema = new mongoose.Schema({
     movie: {
         type: mongoose.Schema.Types.ObjectId,
         ref: 'Movie'
     },
     reviewerId: {
-        type:mongoose.Schema.Types.ObjectId,
+        type: mongoose.Schema.Types.ObjectId,
         ref: 'User'
     },
-    rating:{
+    rating: {
         type: Number,
-        required:true,
+        required: true,
         min: 1,
         max: 10
     },
- comment: {
-    type: String,
-    required: true
- },
+    comment: {
+        type: String,
+        required: true
+    },
     createdAt: {
-        type:Date,
-        default:Date.now}   
+        type: Date,
+        default: Date.now
+    }
 });
 
-export default mongoose.Schema('Review', revSchema);
+export default mongoose.model('Review', revSchema);

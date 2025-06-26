@@ -1,5 +1,6 @@
 import Movie from '../models/Movie.js';
 import User from '../models/Users.js';
+import Review from '../models/Review.js';
 
 export const getUsers = async (req, res) => {
     try {

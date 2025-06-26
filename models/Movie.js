@@ -1,4 +1,4 @@
- import mongoose from 'mongoose';
+import mongoose from 'mongoose';
 
 const movieSchema = new mongoose.Schema({
     title: {
@@ -6,14 +6,14 @@ const movieSchema = new mongoose.Schema({
         required: true,
         index: true
     },
-genre: String,
-releaseYear: Number,
-postedBy:{
-    type: mongoose.Schema.Types.ObjectId,
-    ref: 'User'
-}
+    genre: String,
+    releaseYear: Number,
+    postedBy: {
+        type: String,
+        year: Number
+    }
 
 });
-      
+
 
 export default mongoose.model('Movie', movieSchema);
